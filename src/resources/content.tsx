@@ -2,13 +2,14 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  firstName: "Alfi Nur Qodri",
+  lastName: "Mahfud",
+  name: `Alfi Nur Qodri Mahfud`,
+  role: "Software Engineer",
+  avatar: "/images/al.png",
+  email: "alfinurqodri@gmail.com",
+  location: "Asia/Jember", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  timeZone: "Asia/Jakarta", // Set the IANA time zone string here
   languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
 };
 
@@ -25,31 +26,25 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/specthere",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/alfi-nur-qodri-mahfud-ba8173382/",
     essential: true,
   },
   {
     name: "Instagram",
     icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
+    link: "https://www.instagram.com/alfinurqodri/",
     essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
-    essential: true,
   },
   {
     name: "Email",
     icon: "email",
-    link: `mailto:${person.email}`,
+    link: `mailto:alfinurqodri@gmail.com`,
     essential: true,
   },
 ];
@@ -60,23 +55,23 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Code, Design, and everything in between.</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">GitHub</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Featured work
+          Specthere
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "http://github.com/Specthere/",
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+    I'm Alfi Nur Qodri Mahfud, a Computer Science student at <Text as="span" size="xl" weight="strong">University of Jember</Text>, where I study and learn <br /> a lot about technology, especially in the field of software development. After hours, I build my own projects.
 </>
   ),
 };
@@ -102,20 +97,19 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+       Alfi is a sixth-semester Information Technology student from the University of Jember with a disciplined and ambitious personality. 
+       Active in Student Activity Units. Experienced in web development, app development, and UI/UX, also has a keen interest in app development and IoT.
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Project Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Mobile base programming",
+        timeframe: "2025",
+        role: "Mobile Programmer",
         achievements: [
           <>
             Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
@@ -129,29 +123,29 @@ const about: About = {
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/projects/project-01/ringkasan.jpg",
+            alt: "Devtrack",
             width: 16,
             height: 9,
           },
         ],
       },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
-      },
+      // {
+      //   company: "Creativ3",
+      //   timeframe: "2018 - 2022",
+      //   role: "Lead Designer",
+      //   achievements: [
+      //     <>
+      //       Developed a design system that unified the brand across multiple platforms, improving
+      //       design consistency by 40%.
+      //     </>,
+      //     <>
+      //       Led a cross-functional team to launch a new product line, contributing to a 15% increase
+      //       in overall company revenue.
+      //     </>,
+      //   ],
+      //   images: [],
+      // },
     ],
   },
   studies: {
@@ -159,12 +153,12 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
+        name: "University of Jember",
         description: <>Studied software engineering.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "MAN 2 JEMBER",
+        description: <>Studied at MAN 2 JEMBER as science major student.</>,
       },
     ],
   },
@@ -175,7 +169,7 @@ const about: About = {
       {
         title: "Figma",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Able to prototype in Figma.</>
         ),
         tags: [
           {
@@ -184,20 +178,85 @@ const about: About = {
           },
         ],
         // optional: leave the array empty if you don't want to display images
-        images: [
+        images: [ ],
+      },
+      {
+        title: "Flutter",
+        description: (
+          <>Able to code in Flutter framework using dart language.</>
+        ),
+        tags: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Flutter",
+            icon: "flutter",
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Dart",
+            icon: "dart",
           },
         ],
+        // optional: leave the array empty if you don't want to display images
+        images: [ ],
+      },
+      {
+        title: "Python",
+        description: (
+          <>Able to code in Python language.</>
+        ),
+        tags: [
+          {
+            name: "Python",
+            icon: "python",
+          },
+        ],
+        // optional: leave the array empty if you don't want to display images
+        images: [ ],
+      },
+      {
+        title: "laravel",
+        description: (
+          <>Able to code in Laravel framework.</>
+        ),
+        tags: [
+          {
+            name: "Laravel",
+            icon: "laravel",
+          },
+        ],
+        // optional: leave the array empty if you don't want to display images
+        images: [ ],
+      },
+      {
+        title: "postgreSQL",
+        description: (
+          <>Able to code in PostgreSQL database.</>
+        ),
+        tags: [
+          {
+            name: "PostgreSQL",
+            icon: "postgresql",
+          },
+          {
+            name: "pgAdmin",
+            icon: "postgresql",
+          },
+        ],
+        // optional: leave the array empty if you don't want to display images
+        images: [ ],
+      },
+      {
+        title: "arduino ide",
+        description: (
+          <>Able to code in Arduino IDE.</>
+        ),
+        tags: [
+          {
+            name: "Arduino IDE",
+            icon: "arduino",
+          },
+        ],
+        // optional: leave the array empty if you don't want to display images
+        images: [ ],
       },
       {
         title: "Next.js",
@@ -220,12 +279,6 @@ const about: About = {
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
         ],
       },
     ],

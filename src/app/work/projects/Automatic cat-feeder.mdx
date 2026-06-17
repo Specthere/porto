@@ -1,0 +1,50 @@
+---
+title: "PawMeal: Smart IoT for automatic cat feeding"
+publishedAt: "2024-04-01"
+summary: "AquaZen is an innovative, IoT-based system designed to automate the monitoring and management of fish pond water quality. By integrating smart sensors with a mobile application, it empowers fish farmers to track critical parameters like pH and water volume in real-time, eliminating the need for manual intervention and ensuring optimal aquatic conditions."
+images:
+  - "/images/projects/pawmeal/ringkasan.jpg"
+  - "/images/projects/pawmeal/direct.jpg"
+  - "/images/projects/pawmeal/schedule.jpg"
+
+  
+team:
+  - name: "Alfi Nur"
+    role: "Software Engineer"
+    avatar: "/images/al.png"
+    linkedIn: "https://github.com/Specthere"
+link: "https://once-ui.com/"
+---
+
+## Overview
+
+PawMeal is an IoT-integrated smart application designed to automate and simplify pet care. Seamlessly connected to a physical automatic cat feeder, the platform empowers pet owners to easily establish automated feeding routines or dispense food instantly, ensuring their feline companions are well-fed and cared for even when left alone at home.
+
+## Key Features
+
+- **Customizable Feeding Schedules**: Enabled users to create, modify, and manage precise, automated feeding timetables to ensure their pets receive meals consistently at designated hours.
+
+- **Instant 'Direct Feeding' Module**: Implemented a highly responsive, one-tap button feature within the app, allowing users to manually dispense food in real-time from anywhere.
+
+- **Seamless IoT Hardware Integration**: Engineered a robust and reliable connection between the mobile interface and the physical automated dispenser, ensuring synchronized operations without delays.
+
+- **Remote Pet Care Management**: Provided pet owners with the ultimate convenience and peace of mind by allowing them to fully control their pet's dietary needs remotely through their smartphones.
+
+- **Versatile Pond Compatibility**: Engineered for flexibility, the system is fully compatible with various fish farming setups, including advanced biofloc technology.
+## Technologies Used
+
+- **Flutter**: Utilized as the primary frontend framework to build the cross-platform mobile application. It enabled the creation of a responsive, intuitive, and visually engaging user interface, allowing pet owners to effortlessly navigate through feeding schedules and easily access the direct feeding controls from anywhere.
+
+- **Dart**: The underlying programming language powering the Flutter framework. It was essential for structuring the application's robust frontend logic and managing asynchronous operations, ensuring that real-time user inputs—such as tapping the instant feed button—were processed smoothly and without any UI lag.
+
+- **Firebase**: Implemented as the robust cloud-based backend infrastructure to handle real-time data synchronization between the mobile application and the physical hardware. It reliably stored user-defined feeding timetables and facilitated the rapid, secure transmission of commands for the direct feeding feature.
+
+- **Arduino**: Acted as the core hardware microcontroller for the physical automatic cat feeder unit. It was meticulously programmed to connect to the network, continuously listen for data updates from Firebase, interpret the scheduling rules, and precisely trigger the mechanical dispenser to release food at the exact right moment.
+
+## Challenges and Learnings
+
+The challenge was when i tried to connect the wemos D1(microcontroller that i used for the system) with firebase, cause the wemos had a really small ram. So i had to outsmart it to connect the wemos with the firebase with small RAM capacity.
+
+## Outcome
+
+The development of PawMeal successfully bridges the gap between everyday pet care and smart home technology. By providing a reliable automated scheduling system and instantaneous remote feeding capabilities, the platform significantly reduces the daily hassle for busy pet owners. This project demonstrates the practical application of IoT in enhancing the well-being of pets while offering maximum convenience and peace of mind to their owners.

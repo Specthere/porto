@@ -128,25 +128,6 @@ export const Header = () => {
                   </Row>
                 </>
               )}
-              {routes["/blog"] && (
-                <>
-                  <Row s={{ hide: true }}>
-                    <ToggleButton
-                      prefixIcon="book"
-                      href="/blog"
-                      label={blog.label}
-                      selected={pathname.startsWith("/blog")}
-                    />
-                  </Row>
-                  <Row hide s={{ hide: false }}>
-                    <ToggleButton
-                      prefixIcon="book"
-                      href="/blog"
-                      selected={pathname.startsWith("/blog")}
-                    />
-                  </Row>
-                </>
-              )}
               {routes["/gallery"] && (
                 <>
                   <Row s={{ hide: true }}>
@@ -183,8 +164,13 @@ export const Header = () => {
             textVariant="body-default-s"
             gap="20"
           >
-            <Flex s={{ hide: true }}>
-              {display.time && <TimeDisplay timeZone={person.location} />}
+            <Flex s={{ hide: true }} vertical="center" gap="4">
+              {display.time && <TimeDisplay timeZone={person.timeZone} />}
+              {display.time && (
+                <span style={{ opacity: 0.7, fontSize: "0.75rem", whiteSpace: "nowrap" }}>
+                  {person.timeZone}
+                </span>
+              )}
             </Flex>
           </Flex>
         </Flex>
