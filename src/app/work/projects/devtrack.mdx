@@ -23,22 +23,29 @@ a digital project monitoring application designed to streamline communication an
 
 ## Key Features
 
-- **Component Library**: Built a set of modular, reusable UI components using React and styled-components in Next.js, focusing on accessibility and responsiveness.
-- **Theming and Customization**: Integrated a theming system that allows easy switching and customization of color palettes, typography, and layout styles using CSS variables and Figma tokens.
-- **Figma Integration**: Collaborated closely with designers by setting up a shared design library in Figma. This library was synchronized with the codebase, ensuring design handoffs were seamless and that design tokens remained consistent across both platforms.
-- **Documentation and Usage Guidelines**: Developed comprehensive documentation with Storybook to showcase components, usage patterns, and best practices, ensuring the design system is easy to adopt by other teams.
+- **Role-Based Access Control**: Designed specialized interfaces for Developers and Foremen (Mandor), ensuring strict data separation and workflows based on their specific on-site responsibilities.
+
+-**Interactive Project Creation & Mapping**: Developed a comprehensive project creation tool for Developers, integrated with a mapping feature to precisely define construction locations and spatial scopes.
+
+-**Real-Time Progress Reporting**: Empowered Foremen with a streamlined reporting module to submit construction progress updates directly from the site, keeping Developers consistently informed.
+
+-**Centralized Workforce Management**: Provided Developers with an administrative dashboard to easily register new Foreman accounts and monitor the complete directory of active personnel.
+
+-**Project Lifecycle Tracking**: Created a dedicated system for Foremen to access their currently assigned projects and review a complete history of successfully finished constructions.
+
+-**Unified Profile Management**: Implemented customized profile settings for both Developers and Foremen to maintain accurate professional information and contact details.
 
 ## Technologies Used
 
-- **Next.js**: For fast, server-rendered React applications.
-- **Figma**: For creating and managing design assets and prototypes.
-- **Styled-Components**: For styling React components with a modular, themable approach.
-- **Storybook**: For building an interactive, documented component library.
+- **Figma**: For designing intuitive user interfaces, mapping out user journeys, and creating prototypes before the development phase.
+- **Flutter**: For building a responsive, cross-platform mobile application tailored for both on-site foremen and developers.
+- **Dart**: For structuring the frontend logic and powering the Flutter framework to ensure smooth user interactions and fast rendering.
+- **C#**: For developing robust and secure backend RESTful APIs to handle complex business logic and system communication.
+- **PostgreSQL**: For serving as a reliable relational database to securely manage user roles, project records, spatial data, and progress reports.
 
 ## Challenges and Learnings
 
-One key challenge was balancing the need for flexibility with the desire to maintain design consistency. The solution involved creating well-defined design tokens and establishing clear guidelines for when and how components could be customized. Additionally, setting up effective collaboration workflows between designers and developers using Figma and Git was a learning experience that greatly improved the process.
+The challenges in developing DevTrack was establishing a seamless and secure integration between the C# RESTful API and the Flutter mobile application. Implementing a robust authentication system was particularly complex, as it required securely managing user sessions and role-based access (Developer vs. Foreman) using JWT (JSON Web Tokens). Furthermore, ensuring the API logic accurately mapped to the PostgreSQL database structure—while maintaining fast and reliable data synchronization—required meticulous architectural planning.
 
 ## Outcome
-
-The design system is now actively used across multiple projects, leading to faster development cycles, fewer design inconsistencies, and improved collaboration between design and development teams. It has become a foundation for scaling our products efficiently while ensuring a cohesive user experience.
+The implementation of DevTrack has transformed construction project monitoring by establishing a direct, real-time communication channel between developers and on-site foremen. With integrated spatial mapping and instant progress reporting, management now has complete, transparent visibility over site activities, drastically reducing miscommunication and reporting delays. This project has proven the value of digitalizing on-site workflows to ensure construction projects are tracked accurately and managed efficiently from start to finish.
